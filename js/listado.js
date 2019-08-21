@@ -6,7 +6,7 @@ function showCategoriesList(array){
     for(let i = 0; i < array.length; i++){
         let category = array[i];
 
-        htmlContentToAppend +=
+        htmlContentToAppend += `
         <div class="list-group-item list-group-item-action">
             <div class="row">
                 <div class="col-3">
@@ -21,7 +21,7 @@ function showCategoriesList(array){
                 </div>
             </div>
         </div>
-       
+        `
 
         document.getElementById("cat-list-contain").innerHTML = htmlContentToAppend;
     }
